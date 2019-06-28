@@ -1,25 +1,24 @@
 package bestWorstList.hiltonws.github.com.app.model;
 
-import bestWorstList.hiltonws.github.com.core.generics.DefaultEntity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.io.Serializable;
+import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
 @Table
-public class Movies extends DefaultEntity implements Serializable {
+public class Movies {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
+    private Integer id;
     private String producers;
-    //Em dados reais poderia usar um Integer, ou Long para evitar casts
-    private String year;
+    private Integer year;
     private String title;
     private String studios;
-    //Também poderia usar boolean
     private String winner;
 
 }

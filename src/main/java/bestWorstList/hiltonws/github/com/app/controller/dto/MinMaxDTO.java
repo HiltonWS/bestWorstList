@@ -2,8 +2,10 @@ package bestWorstList.hiltonws.github.com.app.controller.dto;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class MinMaxDTO {
-    private MovieDTO min;
-    private MovieDTO max;
+    private List<MoviesDTO> min;
+    private List<MoviesDTO> max;
 }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MovieDTO {
+public class MoviesDTO {
     private String producer;
     private Integer interval;
     private Integer previsiousWin;
