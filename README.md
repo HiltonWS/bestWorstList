@@ -1,6 +1,6 @@
 # bestWorstList
 
-## Pré-requsitos
+## Pré-requisitos
 
 Testado e executado em um Ubuntu
 
